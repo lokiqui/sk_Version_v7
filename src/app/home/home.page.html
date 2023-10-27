@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home del Usuario</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/profile">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-button [routerLink]="['/instructor']">
+      Instructor
+    </ion-button>
+    <ion-button [routerLink]="['/avion']">
+      Aviones y Simuladores
+    </ion-button>
+  </ion-content>
